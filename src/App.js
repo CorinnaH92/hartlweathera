@@ -1,24 +1,41 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+import React, { useEffect, useState } from "react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h1>My Weather App</h1>
+    <div className="row">
+        <div className="col">
+            <WeatherSearchForm setCurrentWeather={setCurrentWeather}
+        </div>
+        <div className="col">
+            <ShowCurrentWeather data={ currentWeather}/>
     </div>
+    </div>
+    </div>
+      );
+}
+<div
+        <form>
+            <label>
+                Zip Code:
+                <input type="text" zipcode="zipcode" />
+            </label>
+            <label>
+                Country:
+                <input type="text" country="country" />
+            </label>
+
+            <input type="submit" value="Search" />
+        </form>
+
+    </div>
+
+
+
   );
 }
 
