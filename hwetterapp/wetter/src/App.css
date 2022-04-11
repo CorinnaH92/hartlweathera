@@ -1,0 +1,35 @@
+
+
+.App {
+    text-align: center;
+    background: url(./background.jpg);
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: auto;
+}
+
+.App-header {
+    background-color: rgba(50, 109, 138, 0.24);
+    min-height: 100vh;
+    display: grid;
+    flex-direction: column-reverse;
+    align-items: normal;
+    justify-content: normal;
+    font-size: calc(15px + 1vmin);
+    color: #000000;
+}
+
+.App-link {
+    color: #000000;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
